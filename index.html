@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button id="unmove" type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button id="move" type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+           
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" id="first-icon"></i></a>
+                <a href="https://twitter.com/i/flow/signup"><i class="fa-brands fa-twitter" id="second-icon"></i></a>
+                <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=ARgdvAu-JkVSm_HTFfbXoVvFID0iy5RkLSIHGzvJJQ10IHeUWZ-pDO8BKP2BT_pXY0cH9ksxr7Os&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa-brands fa-google" id="third-icon"></i></a>
+            </div>
+
+            
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" id="myemail2" >
+                <span class="emailerror" id="textur2"></span>
+                <div class="flexex">
+                    <input  type="password" class="input-field" placeholder="Enter Password" id="showHide" ><i class="fa-solid fa-eye-slash" id="toggleIcon"></i>
+                </div>
+                
+                <input type="checkbox" class="check-box" ><span>Remember Password</span>
+                <a href="website.html" class="submit-btn">Log In</a>
+            </form>
+
+            <!-- Registration form -->
+
+            <form id="register" class="input-group">
+                <div>
+                    <input id="username" type="text" class="input-field" placeholder="Use ID" name="myusername" >
+                    <span class="error-text" id="error_myusername"></span>
+                </div>
+                <div>
+                    <input type="email" id="myemail" name="emailField" class="input-field" placeholder="Use email" >
+                    <span class="emailerror" id="textur"></span>
+                </div>
+                <div>
+                    <input type="password" class="input-field" placeholder="Enter Password"  id="passw">
+                    <span class="error-text" id="error_mypassword"></span>
+                </div>
+                <div>
+                    <input id="passw2" type="password" class="input-field" placeholder="Reapeat password" name="mypassword2" >
+                    <span class="error-text" id="error_mypassword2"></span>
+                </div>
+                <div id="checkbox">
+                    <input id="agree" type="checkbox" class="check-box" name="agree"><span>I agree to the conditions</span>
+                    <span class="error-text" id="error_agree"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="registracia">Register</button>
+            </form>
+            
+            <!-- Registration Form --> 
+        </div>
+        
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

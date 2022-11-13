@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>The Nav</h4>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">about Web</a>
+            </li>
+            <li>
+                <a href="#">About movies</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="permanent">
+        <div class="owner">
+            <div class="kid-owner">
+                <span class="button-text">Fav movie type</span>
+                <span class="arrow-under"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <ul class="list-items">
+                <li class="item" id="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-texts">1. Comedy</span>
+                </li>
+                <li class="item" id="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-texts">2. Drama</span>
+                </li>
+                <li class="item" id="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-texts">3. action</span>
+                </li>
+                <li class="item" id="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-texts">4. science fiction</span>
+                </li>
+                <li class="item" id="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-texts">5. horror</span>
+                </li>
+            </ul>
+        </div>
+        <form id="form">
+            <input type="text" id="search" placeholder="search for waste time" class="search">
+        </form>
+    </section>
+
+
+    <section>
+        <a href="" class="to-top">
+            <i class="fa-solid fa-arrow-turn-up "></i>
+        </a>
+    </section>
+
+        <div>
+            <h1 class="toppers">TOP MOVIES</h1>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="https://resizing.flixster.com/QrT-Krzry3Ikh6cH4u9bHCYH_6w=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvNGZmZmJkN2YtZDA4YS00ZjkzLWE3OTMtNTgyNDE5NWM3YjhmLmpwZw==" > </div>
+                      <div class="swiper-slide"><img src="https://flxt.tmsimg.com/assets/p8553063_b_v13_ax.jpg" > </div>
+                      <div class="swiper-slide"><img src="https://flxt.tmsimg.com/assets/p185846_b_v8_ad.jpg" > </div>
+                      <div class="swiper-slide"><img src="https://flxt.tmsimg.com/assets/p8282918_b_v13_bm.jpg" ></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
+        </main>
+    
+
+
+    <main id="main">
+
+    </main>
+
+
+    <script src="website.js"></script>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction:false,
+            },
+        loop: true,
+
+        pagination: {
+        el: '.swiper-pagination',
+  },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+    </script>
+</body>
+</html>
