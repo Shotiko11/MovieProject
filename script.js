@@ -6,7 +6,6 @@ let formBox = document.querySelector('.form-box');
 let move = document.getElementById('move');
 let unmove = document.getElementById('unmove');
 
-
 let middle = document.getElementById('middle')
 
 let registrationForm = document.getElementById('register');
@@ -14,7 +13,6 @@ let registrationForm = document.getElementById('register');
 let passwordField = document.getElementById('showHide');
 let toggleIcon = document.getElementById('toggleIcon');
 let emailField = document.getElementById('myemail');
-
 
 emailField.addEventListener('keydown', function() {
     
@@ -37,12 +35,6 @@ emailField.addEventListener('keydown', function() {
     }
 })
 
-
-
-
-
-
-
 toggleIcon.addEventListener('click', function() {
     if(passwordField.type == 'password') {
         //roca davachert, PASSWORDFIELD-is TYPE gaxdeba TEXT(passwordis nacvlad)
@@ -57,11 +49,6 @@ toggleIcon.addEventListener('click', function() {
 
     }
 })
-
-
-
-
-
 
 registrationForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -98,17 +85,10 @@ registrationForm.addEventListener("submit", function (event) {
 
    console.log(errors);
 
-//    formElement.getElementById("error_").foreach((item) => {
-//     item.innerHTML = " "
-//    })
-
-
    for(let item in errors) {
     let spanError = document.getElementById('error_' + item)
     if(spanError) {
         spanError.innerHTML = errors[item];
-
-    }
 
     
    }
@@ -117,28 +97,8 @@ registrationForm.addEventListener("submit", function (event) {
     formElement.submit();
    }
 
-
-
    formBox.style.height = "540px";
 });
-
-
-
-
-// let errors = {
-//     mypassword: 'Password must be filled',
-//     myusername: 'It must be more than 5 letters',
-//     mypassword: 'Password must be filled',
-//     mypassword2: 'passwords to not match',
-//     agree: "You must agree on it"
-
-// }
-
-
-
-
-
-
 
 move.addEventListener('click', function() {
     y.style.display = "block";
@@ -151,10 +111,6 @@ unmove.addEventListener('click', function () {
     x.style.display = "block"
     formBox.style.height = "415px"
 })
-
-
-
-
 
 function register() {
     x.style.left = "-400px";
